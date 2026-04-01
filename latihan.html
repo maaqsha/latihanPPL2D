@@ -1,21 +1,24 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello World</title>
+    <title>My First Website</title>
     <link rel="stylesheet" href="latihan.css" />
   </head>
   <body>
-    <div class="container">
-      <h1 id="message">Hello World!</h1>
-      <button onclick="changeMessage()">Click Me</button>
-    </div>
+    <!-- Title -->
+    <h1>Welcome!</h1>
 
+    <!-- Paragraph -->
+    <p id="text">Hello, this is my first website</p>
+
+    <!-- Button -->
+    <button onclick="changeText()">Click Me</button>
+
+    <!-- JavaScript -->
     <script>
-      function changeMessage() {
-        const message = document.getElementById("message");
-        message.textContent = "Hello, JavaScript!";
+      // Function to change the text when button is clicked
+      function changeText() {
+        document.getElementById("text").textContent = "Button was clicked!";
       }
     </script>
   </body>

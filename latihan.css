@@ -1,37 +1,36 @@
+/* Style the body (page background) */
 body {
   font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-color: lightblue;
+  padding: 20px;
 }
 
-.container {
-  text-align: center;
-  background: white;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
+/* Style the heading */
 h1 {
-  color: #333;
-  margin: 0 0 20px 0;
+  color: darkblue;
+  text-align: center;
 }
 
+/* Style the paragraph */
+p {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Style the button */
 button {
+  background-color: green;
+  color: white;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #667eea;
-  color: white;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  display: block;
+  margin: 20px auto;
 }
 
+/* Change button color when mouse hovers over it */
 button:hover {
-  background-color: #764ba2;
+  background-color: darkgreen;
 }
