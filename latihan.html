@@ -1,56 +1,24 @@
 <!doctype html>
 <htm lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello World</title>
-    <h1>Kambing Hitam</h1>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      }
-      .container {
-        text-align: center;
-        background: white;
-        padding: 40px;
-        border-radius: 10px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-      }
-      h1 {
-        color: #333;
-        margin: 0 0 20px 0;
-      }
-      button {
-        padding: 10px 20px;
-        font-size: 16px;
-        background-color: #667eea;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
-      button:hover {
-        background-color: #764ba2;
-      }
-    </style>
+    <title>My First Website</title>
+    <link rel="stylesheet" href="latihan.css" />
   </head>
   <body>
-    <div class="container">
-      <h1 id="message">Hello World!</h1>
-      <button onclick="changeMessage()">Click Me</button>
-    </div>
+    <!-- Title -->
+    <h1>Welcome!</h1>
 
+    <!-- Paragraph -->
+    <p id="text">Hello, this is my first website</p>
+
+    <!-- Button -->
+    <button onclick="changeText()">Click Me</button>
+
+    <!-- JavaScript -->
     <script>
-      function changeMessage() {
-        const message = document.getElementById("message");
-        message.textContent = "Hello, JavaScript!";
+      // Function to change the text when button is clicked
+      function changeText() {
+        document.getElementById("text").textContent = "Button was clicked!";
       }
     </script>
   </body>
